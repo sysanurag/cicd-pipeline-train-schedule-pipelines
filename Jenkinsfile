@@ -5,7 +5,7 @@ pipeline{
       stage{
         echo 'running build automation'
         sh './gredlew build --no-daemon'
-        archiveArtifacts artifacts 'dist/trainSchedule.zip'
+        archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       } 
     }
   }
